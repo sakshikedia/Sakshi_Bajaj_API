@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-# Change this to your details
 FULL_NAME = "john_doe"
 DOB = "17091999"  # ddmmyyyy
 EMAIL = "john@xyz.com"
@@ -39,7 +38,6 @@ def bfhl_post():
             else:
                 special_characters.append(item)
 
-        # Create alternating caps reverse string
         concat_string = ""
         concat_chars = "".join(concat_chars)[::-1]  # reverse string
         for i, ch in enumerate(concat_chars):
